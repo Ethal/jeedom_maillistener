@@ -31,10 +31,9 @@ class maillistener extends eqLogic {
   public static function dependancy_info() {
     $return = array();
     $return['log'] = 'maillistener_install';
-    $mailparser = realpath(dirname(__FILE__) . '/../../resources/node_modules/mailparser');
-    $imap = realpath(dirname(__FILE__) . '/../../resources/node_modules/imap');
+    $mailparser = realpath(dirname(__FILE__) . '/../../resources/node_modules/mail-listener3');
     $return['progress_file'] = '/tmp/maillistener_dep';
-    if (is_dir($mailparser) && is_dir($imap)) {
+    if (is_dir($mailparser)) {
       $return['state'] = 'ok';
     } else {
       $return['state'] = 'nok';
