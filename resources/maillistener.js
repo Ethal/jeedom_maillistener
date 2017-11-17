@@ -1,4 +1,4 @@
-var MailListener = require("./index.js");
+var MailListener = require("mail-listener3");
 
 var email = '';
 var username = '';
