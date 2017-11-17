@@ -8,6 +8,7 @@
     "request": "latest",
     "imap": "latest",
     "mailparser": "latest",
+    "mail-listener3": "latest",
     "async": "latest"
   }
 }
