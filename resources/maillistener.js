@@ -23,7 +23,7 @@ process.argv.forEach(function(val, index, array) {
 		case 5 : password = val; break;
 		case 6 : server = val; break;
 		case 7 : port = val; break;
-		case 8 : attach = val; break;
+		case 8 : attach = (val=='true')?true:false; break;
 		case 9 : path = val; break;
 	}
 
